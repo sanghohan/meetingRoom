@@ -34,7 +34,22 @@ public class MeetingRoomController {
 
     /*회의실 예약 뷰*/
     @RequestMapping(value = "/view/reservation/v1", method=RequestMethod.GET)
-    public ModelAndView VeiewreservationPage() {
+    public ModelAndView veiewReservationPage() {
+        ModelAndView modelAndView = new ModelAndView();
+
+        modelAndView.addObject("test", "hello world!");
+
+        return modelAndView;
+    }
+
+    /*미팅룸 정보
+    * 이름...
+    * 수용 인원.
+    * 등.
+    * */
+
+    @RequestMapping(value = "/get/meetingRoomInfos/v1", method=RequestMethod.GET)
+    public ModelAndView meetingRooms() {
         ModelAndView modelAndView = new ModelAndView();
 
         modelAndView.addObject("test", "hello world!");
