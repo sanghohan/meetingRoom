@@ -1,4 +1,4 @@
-package com.webApp.meetingRoom.controller;
+package com.webApp.meetingRoom.controller.ViewController;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
